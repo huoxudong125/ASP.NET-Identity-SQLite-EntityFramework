@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.SQLite", "Identity.SQLite\Identity.SQLite.csproj", "{DE1A85BF-0181-4E88-9640-0AD98759FA1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4WorkGps", "Mvc4WorkGps\Mvc4WorkGps.csproj", "{D1F6C410-2526-4998-BA75-7F4602863C11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DE1A85BF-0181-4E88-9640-0AD98759FA1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE1A85BF-0181-4E88-9640-0AD98759FA1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE1A85BF-0181-4E88-9640-0AD98759FA1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1F6C410-2526-4998-BA75-7F4602863C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F6C410-2526-4998-BA75-7F4602863C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F6C410-2526-4998-BA75-7F4602863C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F6C410-2526-4998-BA75-7F4602863C11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

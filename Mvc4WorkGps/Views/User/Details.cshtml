@@ -1,0 +1,50 @@
+﻿@model Mvc4WorkGps.Models.UserModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>UserModel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MobilePhone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MobilePhone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IMSI)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IMSI)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IMEI)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IMEI)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Remark)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Remark)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

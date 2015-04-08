@@ -1,0 +1,126 @@
+﻿@model Mvc4WorkGps.Models.WorkRecordModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>WorkRecordModel</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IMSI)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IMSI)
+            @Html.ValidationMessageFor(model => model.IMSI)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LocationDateTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LocationDateTime)
+            @Html.ValidationMessageFor(model => model.LocationDateTime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LocationType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LocationType)
+            @Html.ValidationMessageFor(model => model.LocationType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Latitude)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Latitude)
+            @Html.ValidationMessageFor(model => model.Latitude)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Longitude)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Longitude)
+            @Html.ValidationMessageFor(model => model.Longitude)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HasRadius)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HasRadius)
+            @Html.ValidationMessageFor(model => model.HasRadius)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Radius)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Radius)
+            @Html.ValidationMessageFor(model => model.Radius)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Province)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Province)
+            @Html.ValidationMessageFor(model => model.Province)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.City)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.City)
+            @Html.ValidationMessageFor(model => model.City)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.District)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.District)
+            @Html.ValidationMessageFor(model => model.District)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Address)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Address)
+            @Html.ValidationMessageFor(model => model.Address)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Description)
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
